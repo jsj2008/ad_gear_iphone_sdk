@@ -1,0 +1,30 @@
+=AdGear iPhone SDK
+
+==Requirements
+
+==Quick Start
+
+Now that you have all required frameworks, it's time to add AdGear support to your application.
+  
+  #import "AdGear.h"
+  
+  ...
+  
+  - (void)applicationDidFinishLaunching:(UIApplication *)application {    
+  	[[AdGear shared] loadConfigWithURL:[NSURL URLWithString:@"http://a.staging.adgear.com/mobile_app/60-adgear-sdk-test.json"]];
+      // Override point for customization after app launch    
+      [window addSubview:viewController.view];
+      [window makeKeyAndVisible];
+  }
+  
+To initiate an AdSpot, add the following to your view:
+
+  AdSpot *static_format = [[[AdSpot alloc] initWithLabel:@"static format" Origin:CGPointMake(0, 100)] autorelease];
+	[[AdGear shared] registerAdSpot:static_format];
+	
+Don't forget to add it to your view:
+
+  [self.view addSubview:static_format];
+
+	
+	
