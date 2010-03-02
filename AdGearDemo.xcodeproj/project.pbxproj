@@ -36,6 +36,12 @@
 		5463D6E61095F3F400EE7191 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5463D6E51095F3F400EE7191 /* QuartzCore.framework */; };
 		5463D8BA10961A9400EE7191 /* close_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 5463D8B810961A9400EE7191 /* close_down.png */; };
 		5463D8BB10961A9400EE7191 /* close_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 5463D8B910961A9400EE7191 /* close_up.png */; };
+		54C9B2E9113DC12600D5786C /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9B2DE113DC12600D5786C /* NSObject+SBJSON.m */; };
+		54C9B2EA113DC12600D5786C /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9B2E0113DC12600D5786C /* NSString+SBJSON.m */; };
+		54C9B2EB113DC12600D5786C /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9B2E2113DC12600D5786C /* SBJSON.m */; };
+		54C9B2EC113DC12600D5786C /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9B2E4113DC12600D5786C /* SBJsonBase.m */; };
+		54C9B2ED113DC12600D5786C /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9B2E6113DC12600D5786C /* SBJsonParser.m */; };
+		54C9B2EE113DC12600D5786C /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9B2E8113DC12600D5786C /* SBJsonWriter.m */; };
 		54D82BF810A0845F00CC547E /* Creative.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D82BF710A0845F00CC547E /* Creative.m */; };
 		54D82C7210A08CEE00CC547E /* StaticFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D82C7110A08CEE00CC547E /* StaticFormat.m */; };
 		54D82C7510A08CFE00CC547E /* AnimatedFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D82C7410A08CFE00CC547E /* AnimatedFormat.m */; };
@@ -97,6 +103,19 @@
 		5463D6E51095F3F400EE7191 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = ../../../../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = SOURCE_ROOT; };
 		5463D8B810961A9400EE7191 /* close_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close_down.png; path = Classes/close_down.png; sourceTree = SOURCE_ROOT; };
 		5463D8B910961A9400EE7191 /* close_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close_up.png; path = Classes/close_up.png; sourceTree = SOURCE_ROOT; };
+		54C9B2DC113DC12600D5786C /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		54C9B2DD113DC12600D5786C /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		54C9B2DE113DC12600D5786C /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		54C9B2DF113DC12600D5786C /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		54C9B2E0113DC12600D5786C /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		54C9B2E1113DC12600D5786C /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		54C9B2E2113DC12600D5786C /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		54C9B2E3113DC12600D5786C /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		54C9B2E4113DC12600D5786C /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		54C9B2E5113DC12600D5786C /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		54C9B2E6113DC12600D5786C /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		54C9B2E7113DC12600D5786C /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		54C9B2E8113DC12600D5786C /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		54D82BF610A0845F00CC547E /* Creative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creative.h; sourceTree = "<group>"; };
 		54D82BF710A0845F00CC547E /* Creative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Creative.m; sourceTree = "<group>"; };
 		54D82C7010A08CEE00CC547E /* StaticFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticFormat.h; sourceTree = "<group>"; };
@@ -189,6 +208,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				54C9B2DB113DC12600D5786C /* json-framework */,
 				5463D6E51095F3F400EE7191 /* QuartzCore.framework */,
 				5463D6AB1095F25400EE7191 /* Three20.xcodeproj */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
@@ -266,6 +286,27 @@
 			children = (
 			);
 			name = Tests;
+			sourceTree = "<group>";
+		};
+		54C9B2DB113DC12600D5786C /* json-framework */ = {
+			isa = PBXGroup;
+			children = (
+				54C9B2DC113DC12600D5786C /* JSON.h */,
+				54C9B2DD113DC12600D5786C /* NSObject+SBJSON.h */,
+				54C9B2DE113DC12600D5786C /* NSObject+SBJSON.m */,
+				54C9B2DF113DC12600D5786C /* NSString+SBJSON.h */,
+				54C9B2E0113DC12600D5786C /* NSString+SBJSON.m */,
+				54C9B2E1113DC12600D5786C /* SBJSON.h */,
+				54C9B2E2113DC12600D5786C /* SBJSON.m */,
+				54C9B2E3113DC12600D5786C /* SBJsonBase.h */,
+				54C9B2E4113DC12600D5786C /* SBJsonBase.m */,
+				54C9B2E5113DC12600D5786C /* SBJsonParser.h */,
+				54C9B2E6113DC12600D5786C /* SBJsonParser.m */,
+				54C9B2E7113DC12600D5786C /* SBJsonWriter.h */,
+				54C9B2E8113DC12600D5786C /* SBJsonWriter.m */,
+			);
+			name = "json-framework";
+			path = "json-framework/Source";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,6 +431,12 @@
 				54D82BF810A0845F00CC547E /* Creative.m in Sources */,
 				54D82C7210A08CEE00CC547E /* StaticFormat.m in Sources */,
 				54D82C7510A08CFE00CC547E /* AnimatedFormat.m in Sources */,
+				54C9B2E9113DC12600D5786C /* NSObject+SBJSON.m in Sources */,
+				54C9B2EA113DC12600D5786C /* NSString+SBJSON.m in Sources */,
+				54C9B2EB113DC12600D5786C /* SBJSON.m in Sources */,
+				54C9B2EC113DC12600D5786C /* SBJsonBase.m in Sources */,
+				54C9B2ED113DC12600D5786C /* SBJsonParser.m in Sources */,
+				54C9B2EE113DC12600D5786C /* SBJsonWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,7 +531,7 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ADDITIONAL_SDKS = "$HOME/Library/SDKs/JSON/${PLATFORM_NAME}.sdk";
+				ADDITIONAL_SDKS = "";
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Louis-Philippe Gauthier (P25ES72JK6)";
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -495,7 +542,6 @@
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
-					"-ljson",
 				);
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CDF35BA1-10C1-4359-A6EC-5389E2BB14C9";
@@ -506,7 +552,7 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ADDITIONAL_SDKS = "$HOME/Library/SDKs/JSON/${PLATFORM_NAME}.sdk";
+				ADDITIONAL_SDKS = "";
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -517,7 +563,6 @@
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
-					"-ljson",
 				);
 				PREBINDING = NO;
 				SDKROOT = iphoneos3.0;

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <JSON/JSON.h>
+#import "JSON.h"
 
 @protocol AdGearDelegate
 - (void)configLoaded:(NSDictionary *)config;
