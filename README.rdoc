@@ -13,7 +13,7 @@
 
 1- To add our library to your application, simply copy over the directory <em>"classes/AdGearLib"</em>. Make sure to select: <em>"Copy items into destination group's folder (if needed)"</em>.
 
-2- In you application delegate (exampleAppDelegate.m), add the following. Make sure to replace <em>"INSERT CONFIG_URL HERE"</em> with your own CONFIG_URL.
+2- In you application delegate (exampleAppDelegate.m), add the following: 
   
   #import "AdGear.h"
   
@@ -21,12 +21,14 @@
     
   - (void)applicationDidFinishLaunching:(UIApplication *)application {
       // Initialize AdGear
-  	  [[AdGear shared] loadConfigWithURL:[NSURL URLWithString:@"INSERT CONFIG_URL HERE"]];
+  	  [[AdGear shared] loadConfigWithURL:[NSURL URLWithString:@"config_url"]];
       
       // Override point for customization after app launch    
       [window addSubview:viewController.view];
       [window makeKeyAndVisible];
   }
+  
+Make sure to replace <em>"config_url"</em> with your own application's config_url (available in the AdGear interface).
 
 3- In your view/viewController, add the following:
   

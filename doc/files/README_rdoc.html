@@ -56,7 +56,7 @@
     </tr>
     <tr class="top-aligned-row">
       <td><strong>Last Update:</strong></td>
-      <td>Wed Mar 03 12:12:55 -0500 2010</td>
+      <td>Wed Mar 03 12:17:58 -0500 2010</td>
     </tr>
     </table>
   </div>
@@ -94,9 +94,7 @@ href="http://github.com/facebook/three20">github.com/facebook/three20</a>)
 items into destination group&#8216;s folder (if needed)&quot;</em>.
 </p>
 <p>
-2- In you application delegate (exampleAppDelegate.m), add the following.
-Make sure to replace <em>&quot;INSERT CONFIG_URL HERE&quot;</em> with your
-own CONFIG_URL.
+2- In you application delegate (exampleAppDelegate.m), add the following:
 </p>
 <pre>
   #import &quot;AdGear.h&quot;
@@ -105,13 +103,17 @@ own CONFIG_URL.
 
   - (void)applicationDidFinishLaunching:(UIApplication *)application {
       // Initialize AdGear
-          [[AdGear shared] loadConfigWithURL:[NSURL URLWithString:@&quot;INSERT CONFIG_URL HERE&quot;]];
+          [[AdGear shared] loadConfigWithURL:[NSURL URLWithString:@&quot;config_url&quot;]];
 
       // Override point for customization after app launch
       [window addSubview:viewController.view];
       [window makeKeyAndVisible];
   }
 </pre>
+<p>
+Make sure to replace <em>&quot;config_url&quot;</em> with your own
+application&#8216;s config_url (available in the AdGear interface).
+</p>
 <p>
 3- In your view/viewController, add the following:
 </p>
