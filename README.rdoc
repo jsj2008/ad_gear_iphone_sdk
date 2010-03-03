@@ -12,9 +12,7 @@
 ==Quick Start
 
 1. To add our library to your application, simply copy over the directory "classes/AdGearLib". Make sure to select "Copy items into destination group's folder (if needed)".
-
 2. In you application delegate (exampleAppDelegate.m):
-  
   #import "AdGear.h"
     
   - (void)applicationDidFinishLaunching:(UIApplication *)application {
@@ -25,9 +23,7 @@
       [window addSubview:viewController.view];
       [window makeKeyAndVisible];
   }
-  
 3. In your view/viewController:
-
   // Initialize AdSpot 
   AdSpot *static_format = [[AdSpot alloc] initWithLabel:@"static format" Origin:CGPointMake(0, 100)];
   // Add AdSpot to the view
