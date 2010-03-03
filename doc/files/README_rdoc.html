@@ -56,7 +56,7 @@
     </tr>
     <tr class="top-aligned-row">
       <td><strong>Last Update:</strong></td>
-      <td>Wed Mar 03 11:51:16 -0500 2010</td>
+      <td>Wed Mar 03 12:12:55 -0500 2010</td>
     </tr>
     </table>
   </div>
@@ -88,18 +88,20 @@ href="http://github.com/facebook/three20">github.com/facebook/three20</a>)
 </li>
 </ul>
 <h2>Quick Start</h2>
-<ol>
-<li>To add our library to your application, simply copy over the directory
-&quot;classes/AdGearLib&quot;. Make sure to select &quot;Copy items into
-destination group&#8216;s folder (if needed)&quot;.
-
-</li>
-<li>In you application delegate (exampleAppDelegate.m):
-
-</li>
-</ol>
+<p>
+1- To add our library to your application, simply copy over the directory
+<em>&quot;classes/AdGearLib&quot;</em>. Make sure to select: <em>&quot;Copy
+items into destination group&#8216;s folder (if needed)&quot;</em>.
+</p>
+<p>
+2- In you application delegate (exampleAppDelegate.m), add the following.
+Make sure to replace <em>&quot;INSERT CONFIG_URL HERE&quot;</em> with your
+own CONFIG_URL.
+</p>
 <pre>
   #import &quot;AdGear.h&quot;
+
+  ...
 
   - (void)applicationDidFinishLaunching:(UIApplication *)application {
       // Initialize AdGear
@@ -110,11 +112,9 @@ destination group&#8216;s folder (if needed)&quot;.
       [window makeKeyAndVisible];
   }
 </pre>
-<ol>
-<li>In your view/viewController:
-
-</li>
-</ol>
+<p>
+3- In your view/viewController, add the following:
+</p>
 <pre>
   // Initialize AdSpot
   AdSpot *static_format = [[AdSpot alloc] initWithLabel:@&quot;static format&quot; Origin:CGPointMake(0, 100)];
@@ -123,6 +123,10 @@ destination group&#8216;s folder (if needed)&quot;.
   // Register AdSpot with AdGear
   [[AdGear shared] registerAdSpot:static_format];
 </pre>
+<p>
+** All tags seen above are also available/auto-generated for you in the
+AdGear interface.
+</p>
 <h2>Support</h2>
 <p>
 You can find us at <a href="http://adgear.com">adgear.com</a>.

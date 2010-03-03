@@ -11,9 +11,13 @@
 
 ==Quick Start
 
-1. To add our library to your application, simply copy over the directory "classes/AdGearLib". Make sure to select "Copy items into destination group's folder (if needed)".
-2. In you application delegate (exampleAppDelegate.m):
+1- To add our library to your application, simply copy over the directory <em>"classes/AdGearLib"</em>. Make sure to select: <em>"Copy items into destination group's folder (if needed)"</em>.
+
+2- In you application delegate (exampleAppDelegate.m), add the following. Make sure to replace <em>"INSERT CONFIG_URL HERE"</em> with your own CONFIG_URL.
+  
   #import "AdGear.h"
+  
+  ...
     
   - (void)applicationDidFinishLaunching:(UIApplication *)application {
       // Initialize AdGear
@@ -23,13 +27,17 @@
       [window addSubview:viewController.view];
       [window makeKeyAndVisible];
   }
-3. In your view/viewController:
+
+3- In your view/viewController, add the following:
+  
   // Initialize AdSpot 
   AdSpot *static_format = [[AdSpot alloc] initWithLabel:@"static format" Origin:CGPointMake(0, 100)];
   // Add AdSpot to the view
   [self.view addSubview:static_format];
   // Register AdSpot with AdGear
   [[AdGear shared] registerAdSpot:static_format];
+  
+** All tags seen above are also available/auto-generated for you in the AdGear interface.
   
 == Support
 
