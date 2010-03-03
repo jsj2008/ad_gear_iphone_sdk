@@ -3,4 +3,4 @@
 	url = git://github.com/facebook/three20.git
 [submodule "json-framework"]
 	path = json-framework
-	url = git://github.com/jkp/json-framework.git
+	url = git://github.com/stig/json-framework.git
