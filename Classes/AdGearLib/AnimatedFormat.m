@@ -35,7 +35,7 @@
 		[self addSubview:label];
 
 		UIButton *close = [UIButton buttonWithType:UIButtonTypeCustom];
-		close.frame = CGRectMake(304, 4, 11, 11);
+		close.frame = CGRectMake(width-16, 4, 11, 11);
 		[close setImage:[UIImage imageNamed:@"close_up.png"] forState:UIControlStateNormal];
 		[close setBackgroundImage:[UIImage imageNamed:@"close_down.png"] forState:UIControlStateNormal];
 		[close addTarget:self action:@selector(animateOut) forControlEvents:UIControlEventTouchUpInside];
