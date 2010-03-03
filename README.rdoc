@@ -1,30 +1,44 @@
 =AdGear iPhone SDK
 
-==Requirements
+==Requirements 
+- json-framework (http://github.com/stig/json-framework) 
+
+    git clone git://github.com/stig/json-framework.git
+  
+- three20 (http://github.com/facebook/three20)
+
+    git clone git://github.com/facebook/three20.git
 
 ==Quick Start
 
-Now that you have all required frameworks, it's time to add AdGear support to your application.
+1. To add our library to your application, simply copy over the directory "classes/AdGearLib". Make sure to select "Copy items into destination group's folder (if needed)".
+
+2. In you application delegate (exampleAppDelegate.m):
   
   #import "AdGear.h"
-  
-  ...
-  
-  - (void)applicationDidFinishLaunching:(UIApplication *)application {    
-  	[[AdGear shared] loadConfigWithURL:[NSURL URLWithString:@"INSERT CONFIG_URL HERE"]];
+    
+  - (void)applicationDidFinishLaunching:(UIApplication *)application {
+      // Initialize AdGear
+  	  [[AdGear shared] loadConfigWithURL:[NSURL URLWithString:@"INSERT CONFIG_URL HERE"]];
+      
       // Override point for customization after app launch    
       [window addSubview:viewController.view];
       [window makeKeyAndVisible];
   }
   
-To initiate an AdSpot, add the following to your view:
+3. In your view/viewController:
 
-  AdSpot *static_format = [[[AdSpot alloc] initWithLabel:@"static format" Origin:CGPointMake(0, 100)] autorelease];
-	[[AdGear shared] registerAdSpot:static_format];
-	
-Don't forget to add it to your view:
-
+  // Initialize AdSpot 
+  AdSpot *static_format = [[AdSpot alloc] initWithLabel:@"static format" Origin:CGPointMake(0, 100)];
+  // Add AdSpot to the view
   [self.view addSubview:static_format];
+  // Register AdSpot with AdGear
+  [[AdGear shared] registerAdSpot:static_format];
+  
+== Support
+
+You can find us at http://adgear.com.
+  
 
 	
 	

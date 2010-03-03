@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>File: README.rdoc</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+  <div id="fileHeader">
+    <h1>README.rdoc</h1>
+    <table class="header-table">
+    <tr class="top-aligned-row">
+      <td><strong>Path:</strong></td>
+      <td>README.rdoc
+      </td>
+    </tr>
+    <tr class="top-aligned-row">
+      <td><strong>Last Update:</strong></td>
+      <td>Wed Mar 03 11:51:16 -0500 2010</td>
+    </tr>
+    </table>
+  </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <h1>AdGear iPhone SDK</h1>
+<h2>Requirements</h2>
+<ul>
+<li>json-framework (<a
+href="http://github.com/stig/json-framework">github.com/stig/json-framework</a>)
+
+<pre>
+  git clone git://github.com/stig/json-framework.git
+</pre>
+</li>
+<li>three20 (<a
+href="http://github.com/facebook/three20">github.com/facebook/three20</a>)
+
+<pre>
+  git clone git://github.com/facebook/three20.git
+</pre>
+</li>
+</ul>
+<h2>Quick Start</h2>
+<ol>
+<li>To add our library to your application, simply copy over the directory
+&quot;classes/AdGearLib&quot;. Make sure to select &quot;Copy items into
+destination group&#8216;s folder (if needed)&quot;.
+
+</li>
+<li>In you application delegate (exampleAppDelegate.m):
+
+</li>
+</ol>
+<pre>
+  #import &quot;AdGear.h&quot;
+
+  - (void)applicationDidFinishLaunching:(UIApplication *)application {
+      // Initialize AdGear
+          [[AdGear shared] loadConfigWithURL:[NSURL URLWithString:@&quot;INSERT CONFIG_URL HERE&quot;]];
+
+      // Override point for customization after app launch
+      [window addSubview:viewController.view];
+      [window makeKeyAndVisible];
+  }
+</pre>
+<ol>
+<li>In your view/viewController:
+
+</li>
+</ol>
+<pre>
+  // Initialize AdSpot
+  AdSpot *static_format = [[AdSpot alloc] initWithLabel:@&quot;static format&quot; Origin:CGPointMake(0, 100)];
+  // Add AdSpot to the view
+  [self.view addSubview:static_format];
+  // Register AdSpot with AdGear
+  [[AdGear shared] registerAdSpot:static_format];
+</pre>
+<h2>Support</h2>
+<p>
+You can find us at <a href="http://adgear.com">adgear.com</a>.
+</p>
+
+    </div>
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>
