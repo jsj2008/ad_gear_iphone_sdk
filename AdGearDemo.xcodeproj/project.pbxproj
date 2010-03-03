@@ -18,19 +18,10 @@
 		54505EE91117603E00E8F776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		54505EEA1117604A00E8F776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		54505EEB1117605400E8F776 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		54505F141117613D00E8F776 /* AdGear.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463D412109519A100EE7191 /* AdGear.m */; };
-		54505F151117613D00E8F776 /* OverlayBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463D5491095481500EE7191 /* OverlayBackground.m */; };
-		54505F161117613D00E8F776 /* AdSpot.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463D5F01095627500EE7191 /* AdSpot.m */; };
-		54505F171117613D00E8F776 /* Creative.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D82BF710A0845F00CC547E /* Creative.m */; };
-		54505F181117613D00E8F776 /* StaticFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D82C7110A08CEE00CC547E /* StaticFormat.m */; };
-		54505F191117613D00E8F776 /* AnimatedFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D82C7410A08CFE00CC547E /* AnimatedFormat.m */; };
 		54505F1A1117616200E8F776 /* Three20.bundle in Headers */ = {isa = PBXBuildFile; fileRef = 5463D6BC1095F3B100EE7191 /* Three20.bundle */; };
 		54505F1B1117616200E8F776 /* close_down.png in Headers */ = {isa = PBXBuildFile; fileRef = 5463D8B810961A9400EE7191 /* close_down.png */; };
 		54505F1C1117616200E8F776 /* close_up.png in Headers */ = {isa = PBXBuildFile; fileRef = 5463D8B910961A9400EE7191 /* close_up.png */; };
 		54505F1D1117616C00E8F776 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5463D6B51095F25400EE7191 /* libThree20.a */; };
-		5463D413109519A100EE7191 /* AdGear.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463D412109519A100EE7191 /* AdGear.m */; };
-		5463D54A1095481500EE7191 /* OverlayBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463D5491095481500EE7191 /* OverlayBackground.m */; };
-		5463D5F11095627500EE7191 /* AdSpot.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463D5F01095627500EE7191 /* AdSpot.m */; };
 		5463D6B61095F27200EE7191 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5463D6B51095F25400EE7191 /* libThree20.a */; };
 		5463D6BD1095F3B100EE7191 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5463D6BC1095F3B100EE7191 /* Three20.bundle */; };
 		5463D6E61095F3F400EE7191 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5463D6E51095F3F400EE7191 /* QuartzCore.framework */; };
@@ -42,9 +33,14 @@
 		54C9B2EC113DC12600D5786C /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9B2E4113DC12600D5786C /* SBJsonBase.m */; };
 		54C9B2ED113DC12600D5786C /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9B2E6113DC12600D5786C /* SBJsonParser.m */; };
 		54C9B2EE113DC12600D5786C /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9B2E8113DC12600D5786C /* SBJsonWriter.m */; };
-		54D82BF810A0845F00CC547E /* Creative.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D82BF710A0845F00CC547E /* Creative.m */; };
-		54D82C7210A08CEE00CC547E /* StaticFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D82C7110A08CEE00CC547E /* StaticFormat.m */; };
-		54D82C7510A08CFE00CC547E /* AnimatedFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D82C7410A08CFE00CC547E /* AnimatedFormat.m */; };
+		54C9BAA1113EC54200D5786C /* AdGear.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9BAA0113EC54200D5786C /* AdGear.m */; };
+		54C9BAAE113EC55600D5786C /* AdSpot.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9BAA3113EC55600D5786C /* AdSpot.m */; };
+		54C9BAAF113EC55600D5786C /* AnimatedFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9BAA5113EC55600D5786C /* AnimatedFormat.m */; };
+		54C9BAB0113EC55600D5786C /* close_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 54C9BAA6113EC55600D5786C /* close_down.png */; };
+		54C9BAB1113EC55600D5786C /* close_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 54C9BAA7113EC55600D5786C /* close_up.png */; };
+		54C9BAB2113EC55600D5786C /* Creative.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9BAA9113EC55600D5786C /* Creative.m */; };
+		54C9BAB3113EC55600D5786C /* OverlayBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9BAAB113EC55600D5786C /* OverlayBackground.m */; };
+		54C9BAB4113EC55600D5786C /* StaticFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9BAAD113EC55600D5786C /* StaticFormat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,12 +88,6 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* AdGearDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdGearDemo_Prefix.pch; sourceTree = "<group>"; };
 		54505EE011175EA700E8F776 /* libAdGear.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAdGear.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5463D411109519A100EE7191 /* AdGear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdGear.h; sourceTree = "<group>"; };
-		5463D412109519A100EE7191 /* AdGear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdGear.m; sourceTree = "<group>"; };
-		5463D5481095481500EE7191 /* OverlayBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayBackground.h; sourceTree = "<group>"; };
-		5463D5491095481500EE7191 /* OverlayBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayBackground.m; sourceTree = "<group>"; };
-		5463D5EF1095627500EE7191 /* AdSpot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdSpot.h; sourceTree = "<group>"; };
-		5463D5F01095627500EE7191 /* AdSpot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdSpot.m; sourceTree = "<group>"; };
 		5463D6AB1095F25400EE7191 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = three20/src/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		5463D6BC1095F3B100EE7191 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
 		5463D6E51095F3F400EE7191 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = ../../../../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = SOURCE_ROOT; };
@@ -116,12 +106,20 @@
 		54C9B2E6113DC12600D5786C /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
 		54C9B2E7113DC12600D5786C /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		54C9B2E8113DC12600D5786C /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
-		54D82BF610A0845F00CC547E /* Creative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creative.h; sourceTree = "<group>"; };
-		54D82BF710A0845F00CC547E /* Creative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Creative.m; sourceTree = "<group>"; };
-		54D82C7010A08CEE00CC547E /* StaticFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticFormat.h; sourceTree = "<group>"; };
-		54D82C7110A08CEE00CC547E /* StaticFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticFormat.m; sourceTree = "<group>"; };
-		54D82C7310A08CFE00CC547E /* AnimatedFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedFormat.h; sourceTree = "<group>"; };
-		54D82C7410A08CFE00CC547E /* AnimatedFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedFormat.m; sourceTree = "<group>"; };
+		54C9BA9F113EC54200D5786C /* AdGear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdGear.h; sourceTree = "<group>"; };
+		54C9BAA0113EC54200D5786C /* AdGear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdGear.m; sourceTree = "<group>"; };
+		54C9BAA2113EC55600D5786C /* AdSpot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdSpot.h; sourceTree = "<group>"; };
+		54C9BAA3113EC55600D5786C /* AdSpot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdSpot.m; sourceTree = "<group>"; };
+		54C9BAA4113EC55600D5786C /* AnimatedFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedFormat.h; sourceTree = "<group>"; };
+		54C9BAA5113EC55600D5786C /* AnimatedFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedFormat.m; sourceTree = "<group>"; };
+		54C9BAA6113EC55600D5786C /* close_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_down.png; sourceTree = "<group>"; };
+		54C9BAA7113EC55600D5786C /* close_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_up.png; sourceTree = "<group>"; };
+		54C9BAA8113EC55600D5786C /* Creative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creative.h; sourceTree = "<group>"; };
+		54C9BAA9113EC55600D5786C /* Creative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Creative.m; sourceTree = "<group>"; };
+		54C9BAAA113EC55600D5786C /* OverlayBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayBackground.h; sourceTree = "<group>"; };
+		54C9BAAB113EC55600D5786C /* OverlayBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayBackground.m; sourceTree = "<group>"; };
+		54C9BAAC113EC55600D5786C /* StaticFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticFormat.h; sourceTree = "<group>"; };
+		54C9BAAD113EC55600D5786C /* StaticFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticFormat.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* AdGearDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AdGearDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -240,8 +238,8 @@
 		5463D5541095499C00EE7191 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5463D411109519A100EE7191 /* AdGear.h */,
-				5463D412109519A100EE7191 /* AdGear.m */,
+				54C9BA9F113EC54200D5786C /* AdGear.h */,
+				54C9BAA0113EC54200D5786C /* AdGear.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -249,16 +247,18 @@
 		5463D555109549AE00EE7191 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5463D5EF1095627500EE7191 /* AdSpot.h */,
-				5463D5F01095627500EE7191 /* AdSpot.m */,
-				54D82C7010A08CEE00CC547E /* StaticFormat.h */,
-				54D82C7110A08CEE00CC547E /* StaticFormat.m */,
-				54D82C7310A08CFE00CC547E /* AnimatedFormat.h */,
-				54D82C7410A08CFE00CC547E /* AnimatedFormat.m */,
-				54D82BF610A0845F00CC547E /* Creative.h */,
-				54D82BF710A0845F00CC547E /* Creative.m */,
-				5463D5481095481500EE7191 /* OverlayBackground.h */,
-				5463D5491095481500EE7191 /* OverlayBackground.m */,
+				54C9BAA2113EC55600D5786C /* AdSpot.h */,
+				54C9BAA3113EC55600D5786C /* AdSpot.m */,
+				54C9BAA4113EC55600D5786C /* AnimatedFormat.h */,
+				54C9BAA5113EC55600D5786C /* AnimatedFormat.m */,
+				54C9BAA6113EC55600D5786C /* close_down.png */,
+				54C9BAA7113EC55600D5786C /* close_up.png */,
+				54C9BAA8113EC55600D5786C /* Creative.h */,
+				54C9BAA9113EC55600D5786C /* Creative.m */,
+				54C9BAAA113EC55600D5786C /* OverlayBackground.h */,
+				54C9BAAB113EC55600D5786C /* OverlayBackground.m */,
+				54C9BAAC113EC55600D5786C /* StaticFormat.h */,
+				54C9BAAD113EC55600D5786C /* StaticFormat.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -412,6 +412,8 @@
 				5463D6BD1095F3B100EE7191 /* Three20.bundle in Resources */,
 				5463D8BA10961A9400EE7191 /* close_down.png in Resources */,
 				5463D8BB10961A9400EE7191 /* close_up.png in Resources */,
+				54C9BAB0113EC55600D5786C /* close_down.png in Resources */,
+				54C9BAB1113EC55600D5786C /* close_up.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,18 +427,18 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AdGearDemoAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* AdGearDemoViewController.m in Sources */,
-				5463D413109519A100EE7191 /* AdGear.m in Sources */,
-				5463D54A1095481500EE7191 /* OverlayBackground.m in Sources */,
-				5463D5F11095627500EE7191 /* AdSpot.m in Sources */,
-				54D82BF810A0845F00CC547E /* Creative.m in Sources */,
-				54D82C7210A08CEE00CC547E /* StaticFormat.m in Sources */,
-				54D82C7510A08CFE00CC547E /* AnimatedFormat.m in Sources */,
 				54C9B2E9113DC12600D5786C /* NSObject+SBJSON.m in Sources */,
 				54C9B2EA113DC12600D5786C /* NSString+SBJSON.m in Sources */,
 				54C9B2EB113DC12600D5786C /* SBJSON.m in Sources */,
 				54C9B2EC113DC12600D5786C /* SBJsonBase.m in Sources */,
 				54C9B2ED113DC12600D5786C /* SBJsonParser.m in Sources */,
 				54C9B2EE113DC12600D5786C /* SBJsonWriter.m in Sources */,
+				54C9BAA1113EC54200D5786C /* AdGear.m in Sources */,
+				54C9BAAE113EC55600D5786C /* AdSpot.m in Sources */,
+				54C9BAAF113EC55600D5786C /* AnimatedFormat.m in Sources */,
+				54C9BAB2113EC55600D5786C /* Creative.m in Sources */,
+				54C9BAB3113EC55600D5786C /* OverlayBackground.m in Sources */,
+				54C9BAB4113EC55600D5786C /* StaticFormat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,12 +446,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54505F141117613D00E8F776 /* AdGear.m in Sources */,
-				54505F151117613D00E8F776 /* OverlayBackground.m in Sources */,
-				54505F161117613D00E8F776 /* AdSpot.m in Sources */,
-				54505F171117613D00E8F776 /* Creative.m in Sources */,
-				54505F181117613D00E8F776 /* StaticFormat.m in Sources */,
-				54505F191117613D00E8F776 /* AnimatedFormat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
