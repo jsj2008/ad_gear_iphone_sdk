@@ -27,14 +27,10 @@
 		54505EEA1117604A00E8F776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		54505EEB1117605400E8F776 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		54505F1A1117616200E8F776 /* Three20.bundle in Headers */ = {isa = PBXBuildFile; fileRef = 5463D6BC1095F3B100EE7191 /* Three20.bundle */; };
-		54505F1B1117616200E8F776 /* close_down.png in Headers */ = {isa = PBXBuildFile; fileRef = 5463D8B810961A9400EE7191 /* close_down.png */; };
-		54505F1C1117616200E8F776 /* close_up.png in Headers */ = {isa = PBXBuildFile; fileRef = 5463D8B910961A9400EE7191 /* close_up.png */; };
 		54505F1D1117616C00E8F776 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5463D6B51095F25400EE7191 /* libThree20.a */; };
 		5463D6B61095F27200EE7191 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5463D6B51095F25400EE7191 /* libThree20.a */; };
 		5463D6BD1095F3B100EE7191 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5463D6BC1095F3B100EE7191 /* Three20.bundle */; };
 		5463D6E61095F3F400EE7191 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5463D6E51095F3F400EE7191 /* QuartzCore.framework */; };
-		5463D8BA10961A9400EE7191 /* close_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 5463D8B810961A9400EE7191 /* close_down.png */; };
-		5463D8BB10961A9400EE7191 /* close_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 5463D8B910961A9400EE7191 /* close_up.png */; };
 		54C9B2E9113DC12600D5786C /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9B2DE113DC12600D5786C /* NSObject+SBJSON.m */; };
 		54C9B2EA113DC12600D5786C /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9B2E0113DC12600D5786C /* NSString+SBJSON.m */; };
 		54C9B2EB113DC12600D5786C /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9B2E2113DC12600D5786C /* SBJSON.m */; };
@@ -105,8 +101,6 @@
 		5463D6AB1095F25400EE7191 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = three20/src/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		5463D6BC1095F3B100EE7191 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
 		5463D6E51095F3F400EE7191 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = ../../../../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = SOURCE_ROOT; };
-		5463D8B810961A9400EE7191 /* close_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close_down.png; path = Classes/close_down.png; sourceTree = SOURCE_ROOT; };
-		5463D8B910961A9400EE7191 /* close_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close_up.png; path = Classes/close_up.png; sourceTree = SOURCE_ROOT; };
 		54C9B2DC113DC12600D5786C /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		54C9B2DD113DC12600D5786C /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
 		54C9B2DE113DC12600D5786C /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
@@ -251,8 +245,6 @@
 				54493E07113EF28900E72544 /* AdSpot.m */,
 				54493E08113EF28900E72544 /* AnimatedFormat.h */,
 				54493E09113EF28900E72544 /* AnimatedFormat.m */,
-				54493E0A113EF28900E72544 /* close_down.png */,
-				54493E0B113EF28900E72544 /* close_up.png */,
 				54493E0C113EF28900E72544 /* Creative.h */,
 				54493E0D113EF28900E72544 /* Creative.m */,
 				54493E0E113EF28900E72544 /* OverlayBackground.h */,
@@ -275,8 +267,8 @@
 		5463D8B710961A7500EE7191 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
-				5463D8B810961A9400EE7191 /* close_down.png */,
-				5463D8B910961A9400EE7191 /* close_up.png */,
+				54493E0A113EF28900E72544 /* close_down.png */,
+				54493E0B113EF28900E72544 /* close_up.png */,
 			);
 			name = Ressources;
 			sourceTree = "<group>";
@@ -317,8 +309,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				54505F1A1117616200E8F776 /* Three20.bundle in Headers */,
-				54505F1B1117616200E8F776 /* close_down.png in Headers */,
-				54505F1C1117616200E8F776 /* close_up.png in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,8 +400,6 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* AdGearDemoViewController.xib in Resources */,
 				5463D6BD1095F3B100EE7191 /* Three20.bundle in Resources */,
-				5463D8BA10961A9400EE7191 /* close_down.png in Resources */,
-				5463D8BB10961A9400EE7191 /* close_up.png in Resources */,
 				54493E14113EF28900E72544 /* close_down.png in Resources */,
 				54493E15113EF28900E72544 /* close_up.png in Resources */,
 			);

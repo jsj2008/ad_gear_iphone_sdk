@@ -17,7 +17,7 @@
 
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
-	[[AdGear shared] loadConfigWithURL:[NSURL URLWithString:@"http://a.staging.adgear.com/mobile_app/60-adgear-sdk-test.json"]];
+	[[AdGear shared] loadConfigWithURL:[NSURL URLWithString:@"http://a.adgear.com/mobile_app/151-demo-app.json"]];
     // Override point for customization after app launch    
     [window addSubview:viewController.view];
     [window makeKeyAndVisible];

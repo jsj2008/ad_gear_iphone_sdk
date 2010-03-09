@@ -12,15 +12,15 @@
 
 - (void)viewDidLoad {
 	// AdSpot #1 using static format
-	AdSpot *static_format = [[AdSpot alloc] initWithLabel:@"static format" Origin:CGPointMake(0, 100)];
+	AdSpot *static_format = [[[AdSpot alloc] initWithLabel:@"static_format" Origin:CGPointMake(0, 100)] autorelease];
 	[self.view addSubview:static_format];
 	[[AdGear shared] registerAdSpot:static_format];
 	
 	// AdSpot #2 using animated format
-	animated_format = [[AdSpot alloc] initWithLabel:@"animated format" Origin:CGPointMake(0, 386)];
+	animated_format = [[AdSpot alloc] initWithLabel:@"animated_format" Origin:CGPointMake(0, 386)];
 	[self.view addSubview:animated_format];
 	[[AdGear shared] registerAdSpot:animated_format];
-	
+
     [super viewDidLoad];
 }
 
